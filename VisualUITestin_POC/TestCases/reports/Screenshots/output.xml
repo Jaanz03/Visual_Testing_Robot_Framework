@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.2 on win32)" generated="20240923 12:14:39.648" rpa="false" schemaversion="4">
+<suite id="s1" name="Testcase VisualUI" source="C:\Users\vjansi\PycharmProjects\VisualUITestin_POC\TestCases\Testcase_VisualUI.robot">
+<test id="s1-t1" name="Compare Two Different Images" line="13">
+<kw name="Run Keyword And Expect Error" library="BuiltIn">
+<arg>The compared images are different.</arg>
+<arg>Compare Images</arg>
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/reference.png</arg>
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/WagonRCar.png</arg>
+<doc>Runs the keyword and checks that the expected error occurred.</doc>
+<kw name="Compare Images" library="DocTest.VisualTest">
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/reference.png</arg>
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/WagonRCar.png</arg>
+<doc>Compares the documents/images ``reference_image`` and ``test_image``.</doc>
+<msg timestamp="20240923 12:14:41.233" level="INFO">Compare Image Object created in 0.0119 seconds
+Compare Image Object created in 0.0128 seconds</msg>
+<msg timestamp="20240923 12:14:41.233" level="INFO" html="true">_reference_page_1:&lt;br&gt;&lt;a href="screenshots\4f5d915b-7977-11ef-8a28-8cc681825e50_reference_page_1.png" target="_blank"&gt;&lt;img src="screenshots\4f5d915b-7977-11ef-8a28-8cc681825e50_reference_page_1.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:14:41.233" level="INFO" html="true">_candidate_page_1:&lt;br&gt;&lt;a href="screenshots\4f649f5c-7977-11ef-9b2f-8cc681825e50_candidate_page_1.png" target="_blank"&gt;&lt;img src="screenshots\4f649f5c-7977-11ef-9b2f-8cc681825e50_candidate_page_1.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:14:41.233" level="FAIL">The compared images have different dimensions:
+reference:(568, 751, 3)
+candidate:(616, 753, 3)</msg>
+<status status="FAIL" starttime="20240923 12:14:41.110" endtime="20240923 12:14:41.235"/>
+</kw>
+<msg timestamp="20240923 12:14:41.235" level="FAIL">Expected error 'The compared images are different.' but got 'The compared images have different dimensions:
+reference:(568, 751, 3)
+candidate:(616, 753, 3)'.</msg>
+<status status="FAIL" starttime="20240923 12:14:41.110" endtime="20240923 12:14:41.235"/>
+</kw>
+<status status="FAIL" starttime="20240923 12:14:41.109" endtime="20240923 12:14:41.236">Expected error 'The compared images are different.' but got 'The compared images have different dimensions:
+reference:(568, 751, 3)
+candidate:(616, 753, 3)'.</status>
+</test>
+<test id="s1-t2" name="Compare Two Same Images" line="16">
+<kw name="Compare Images" library="DocTest.VisualTest">
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/reference.png</arg>
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/reference - Copy.png</arg>
+<doc>Compares the documents/images ``reference_image`` and ``test_image``.</doc>
+<msg timestamp="20240923 12:14:41.351" level="INFO">Compare Image Object created in 0.0095 seconds
+Compare Image Object created in 0.0093 seconds</msg>
+<msg timestamp="20240923 12:14:41.351" level="INFO" html="true">_page_1_compare_concat:&lt;br&gt;&lt;a href="screenshots\4f70f212-7977-11ef-952c-8cc681825e50_page_1_compare_concat.png" target="_blank"&gt;&lt;img src="screenshots\4f70f212-7977-11ef-952c-8cc681825e50_page_1_compare_concat.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;
+The compared images are equal
+Visual Image comparison performed in 0.0928 seconds</msg>
+<status status="PASS" starttime="20240923 12:14:41.238" endtime="20240923 12:14:41.351"/>
+</kw>
+<status status="PASS" starttime="20240923 12:14:41.237" endtime="20240923 12:14:41.351"/>
+</test>
+<test id="s1-t3" name="Compare Two Same Images With Different resolution" line="19">
+<kw name="Compare Images" library="DocTest.VisualTest">
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/reference.png</arg>
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/expressoCar.png</arg>
+<doc>Compares the documents/images ``reference_image`` and ``test_image``.</doc>
+<msg timestamp="20240923 12:14:41.729" level="INFO">Compare Image Object created in 0.0085 seconds
+Compare Image Object created in 0.0044 seconds</msg>
+<msg timestamp="20240923 12:14:41.729" level="INFO" html="true">_page_1_compare_concat:&lt;br&gt;&lt;a href="screenshots\4f80ced0-7977-11ef-a951-8cc681825e50_page_1_compare_concat.png" target="_blank"&gt;&lt;img src="screenshots\4f80ced0-7977-11ef-a951-8cc681825e50_page_1_compare_concat.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:14:41.729" level="INFO" html="true">_page_1_rectangles_concat:&lt;br&gt;&lt;a href="screenshots\4fa1fb7f-7977-11ef-af28-8cc681825e50_page_1_rectangles_concat.png" target="_blank"&gt;&lt;img src="screenshots\4fa1fb7f-7977-11ef-af28-8cc681825e50_page_1_rectangles_concat.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:14:41.729" level="INFO" html="true">_page_1_blended:&lt;br&gt;&lt;a href="screenshots\4faebfa2-7977-11ef-8fe5-8cc681825e50_page_1_blended.png" target="_blank"&gt;&lt;img src="screenshots\4faebfa2-7977-11ef-8fe5-8cc681825e50_page_1_blended.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:14:41.729" level="INFO" html="true">_page_1_diff:&lt;br&gt;&lt;a href="screenshots\4fb535c1-7977-11ef-bf13-8cc681825e50_page_1_diff.png" target="_blank"&gt;&lt;img src="screenshots\4fb535c1-7977-11ef-bf13-8cc681825e50_page_1_diff.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:14:41.729" level="FAIL">The compared images are different.</msg>
+<status status="FAIL" starttime="20240923 12:14:41.353" endtime="20240923 12:14:41.730"/>
+</kw>
+<status status="FAIL" starttime="20240923 12:14:41.352" endtime="20240923 12:14:41.730">The compared images are different.</status>
+</test>
+<test id="s1-t4" name="Compare Two Pdf Documents with Text Content" line="28">
+<kw name="Compare Images" library="DocTest.VisualTest">
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/sample_1_page_moved.pdf</arg>
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/sample_pdf.pdf</arg>
+<arg>compare=text</arg>
+<arg>get_pdf_content=${true}</arg>
+<doc>Compares the documents/images ``reference_image`` and ``test_image``.</doc>
+<msg timestamp="20240923 12:14:43.748" level="INFO">Rendering document to PyMuPDF Image performed in 0.0033 seconds
+Conversion from PyMuPDF Image to OpenCV Image performed in 0.2191 seconds
+Compare Image Object created in 0.2234 seconds
+Rendering document to PyMuPDF Image performed in 0.0013 seconds
+Conversion from PyMuPDF Image to OpenCV Image performed in 0.1849 seconds
+Compare Image Object created in 0.1872 seconds</msg>
+<msg timestamp="20240923 12:14:43.748" level="INFO" html="true">_page_1_compare_concat:&lt;br&gt;&lt;a href="screenshots\4ff9114e-7977-11ef-9861-8cc681825e50_page_1_compare_concat.png" target="_blank"&gt;&lt;img src="screenshots\4ff9114e-7977-11ef-9861-8cc681825e50_page_1_compare_concat.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:14:43.748" level="INFO" html="true">_page_1_rectangles_concat:&lt;br&gt;&lt;a href="screenshots\50ba1d1a-7977-11ef-a63d-8cc681825e50_page_1_rectangles_concat.png" target="_blank"&gt;&lt;img src="screenshots\50ba1d1a-7977-11ef-a63d-8cc681825e50_page_1_rectangles_concat.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:14:43.748" level="INFO" html="true">_page_1_blended:&lt;br&gt;&lt;a href="screenshots\50d7d098-7977-11ef-a1a8-8cc681825e50_page_1_blended.png" target="_blank"&gt;&lt;img src="screenshots\50d7d098-7977-11ef-a1a8-8cc681825e50_page_1_blended.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:14:43.748" level="INFO" html="true">_page_1_diff:&lt;br&gt;&lt;a href="screenshots\50e72eb0-7977-11ef-8dc1-8cc681825e50_page_1_diff.png" target="_blank"&gt;&lt;img src="screenshots\50e72eb0-7977-11ef-8dc1-8cc681825e50_page_1_diff.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:14:43.748" level="FAIL">The compared images are different.</msg>
+<status status="FAIL" starttime="20240923 12:14:41.733" endtime="20240923 12:14:43.749"/>
+</kw>
+<status status="FAIL" starttime="20240923 12:14:41.732" endtime="20240923 12:14:43.750">The compared images are different.</status>
+</test>
+<test id="s1-t5" name="Capture Image at Website" line="31">
+<kw name="Open Application" library="keywordsVisualUI">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20240923 12:14:43.752" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20240923 12:14:43.752" endtime="20240923 12:14:50.141"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>https://www.marutisuzuki.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20240923 12:14:50.141" level="INFO">Opening url 'https://www.marutisuzuki.com/'</msg>
+<status status="PASS" starttime="20240923 12:14:50.141" endtime="20240923 12:14:52.545"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240923 12:14:52.546" endtime="20240923 12:14:52.605"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>id:marutiLogo</arg>
+<arg>timeout=${DEFAULT_TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240923 12:14:52.606" endtime="20240923 12:14:52.665"/>
+</kw>
+<status status="PASS" starttime="20240923 12:14:43.751" endtime="20240923 12:14:52.666"/>
+</kw>
+<kw name="Navigate To First Product" library="keywordsVisualUI">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>(//div[@class="image-area"])[1]</arg>
+<arg>timeout=${DEFAULT_TIMEOUT}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240923 12:14:52.666" endtime="20240923 12:14:52.705"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>(//div[@class="image-area"])[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20240923 12:14:52.706" endtime="20240923 12:14:53.002"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240923 12:15:03.003" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20240923 12:14:53.002" endtime="20240923 12:15:03.003"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>(//div[@class="image-area"])[1]</arg>
+<arg>compare-selenium-element-screenshot.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20240923 12:15:03.149" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="compare-selenium-element-screenshot.png"&gt;&lt;img src="compare-selenium-element-screenshot.png" width="400px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20240923 12:15:03.003" endtime="20240923 12:15:03.149"/>
+</kw>
+<kw name="Copy File" library="OperatingSystem">
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/reports/Screenshots/compare-selenium-element-screenshot.png</arg>
+<arg>c:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images</arg>
+<doc>Copies the source file into the destination.</doc>
+<msg timestamp="20240923 12:15:03.159" level="INFO" html="true">Copied file from '&lt;a href="file://C:\Users\vjansi\PycharmProjects\VisualUITestin_POC\reports\Screenshots\compare-selenium-element-screenshot.png"&gt;C:\Users\vjansi\PycharmProjects\VisualUITestin_POC\reports\Screenshots\compare-selenium-element-screenshot.png&lt;/a&gt;' to '&lt;a href="file://c:\Users\vjansi\PycharmProjects\VisualUITestin_POC\Images\compare-selenium-element-screenshot.png"&gt;c:\Users\vjansi\PycharmProjects\VisualUITestin_POC\Images\compare-selenium-element-screenshot.png&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20240923 12:15:03.149" endtime="20240923 12:15:03.159"/>
+</kw>
+<status status="PASS" starttime="20240923 12:14:52.666" endtime="20240923 12:15:03.159"/>
+</kw>
+<kw name="Run Keyword And Expect Error" library="BuiltIn">
+<arg>The compared images are different.</arg>
+<arg>Compare Images</arg>
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/compare-selenium-element-screenshot.png</arg>
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/captured_reference_screenshot.png</arg>
+<doc>Runs the keyword and checks that the expected error occurred.</doc>
+<kw name="Compare Images" library="DocTest.VisualTest">
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/compare-selenium-element-screenshot.png</arg>
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/captured_reference_screenshot.png</arg>
+<doc>Compares the documents/images ``reference_image`` and ``test_image``.</doc>
+<msg timestamp="20240923 12:15:03.195" level="INFO">Compare Image Object created in 0.0027 seconds
+Compare Image Object created in 0.0039 seconds</msg>
+<msg timestamp="20240923 12:15:03.195" level="INFO" html="true">_reference_page_1:&lt;br&gt;&lt;a href="screenshots\5c7fa72b-7977-11ef-8b49-8cc681825e50_reference_page_1.png" target="_blank"&gt;&lt;img src="screenshots\5c7fa72b-7977-11ef-8b49-8cc681825e50_reference_page_1.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:15:03.195" level="INFO" html="true">_candidate_page_1:&lt;br&gt;&lt;a href="screenshots\5c812d06-7977-11ef-97b8-8cc681825e50_candidate_page_1.png" target="_blank"&gt;&lt;img src="screenshots\5c812d06-7977-11ef-97b8-8cc681825e50_candidate_page_1.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:15:03.195" level="FAIL">The compared images have different dimensions:
+reference:(149, 248, 3)
+candidate:(224, 371, 3)</msg>
+<status status="FAIL" starttime="20240923 12:15:03.160" endtime="20240923 12:15:03.196"/>
+</kw>
+<msg timestamp="20240923 12:15:03.196" level="FAIL">Expected error 'The compared images are different.' but got 'The compared images have different dimensions:
+reference:(149, 248, 3)
+candidate:(224, 371, 3)'.</msg>
+<status status="FAIL" starttime="20240923 12:15:03.160" endtime="20240923 12:15:03.196"/>
+</kw>
+<status status="FAIL" starttime="20240923 12:14:43.751" endtime="20240923 12:15:03.197">Expected error 'The compared images are different.' but got 'The compared images have different dimensions:
+reference:(149, 248, 3)
+candidate:(224, 371, 3)'.</status>
+</test>
+<test id="s1-t6" name="Compare Two Same Images and Highlight Differences" line="36">
+<kw name="Compare Images" library="DocTest.VisualTest">
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/Beach_left.jpg</arg>
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/Beach_right.jpg</arg>
+<doc>Compares the documents/images ``reference_image`` and ``test_image``.</doc>
+<msg timestamp="20240923 12:15:03.428" level="INFO">Compare Image Object created in 0.0051 seconds
+Compare Image Object created in 0.0046 seconds</msg>
+<msg timestamp="20240923 12:15:03.428" level="INFO" html="true">_page_1_compare_concat:&lt;br&gt;&lt;a href="screenshots\5c85e479-7977-11ef-8b31-8cc681825e50_page_1_compare_concat.png" target="_blank"&gt;&lt;img src="screenshots\5c85e479-7977-11ef-8b31-8cc681825e50_page_1_compare_concat.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:15:03.428" level="INFO" html="true">_page_1_rectangles_concat:&lt;br&gt;&lt;a href="screenshots\5c9a360c-7977-11ef-8f38-8cc681825e50_page_1_rectangles_concat.png" target="_blank"&gt;&lt;img src="screenshots\5c9a360c-7977-11ef-8f38-8cc681825e50_page_1_rectangles_concat.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:15:03.428" level="INFO" html="true">_page_1_blended:&lt;br&gt;&lt;a href="screenshots\5ca173d7-7977-11ef-9de0-8cc681825e50_page_1_blended.png" target="_blank"&gt;&lt;img src="screenshots\5ca173d7-7977-11ef-9de0-8cc681825e50_page_1_blended.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:15:03.428" level="INFO" html="true">_page_1_diff:&lt;br&gt;&lt;a href="screenshots\5ca5ec05-7977-11ef-8b70-8cc681825e50_page_1_diff.png" target="_blank"&gt;&lt;img src="screenshots\5ca5ec05-7977-11ef-8b70-8cc681825e50_page_1_diff.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:15:03.429" level="FAIL">The compared images are different.</msg>
+<status status="FAIL" starttime="20240923 12:15:03.199" endtime="20240923 12:15:03.430"/>
+</kw>
+<status status="FAIL" starttime="20240923 12:15:03.198" endtime="20240923 12:15:03.431">The compared images are different.</status>
+</test>
+<test id="s1-t7" name="Compare Two Same Images with date and Highlight Differences" line="39">
+<kw name="Compare Images" library="DocTest.VisualTest">
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/Beach_date.png</arg>
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/Beach_left.jpg</arg>
+<doc>Compares the documents/images ``reference_image`` and ``test_image``.</doc>
+<msg timestamp="20240923 12:15:03.674" level="INFO">Compare Image Object created in 0.0079 seconds
+Compare Image Object created in 0.0045 seconds</msg>
+<msg timestamp="20240923 12:15:03.674" level="INFO" html="true">_page_1_compare_concat:&lt;br&gt;&lt;a href="screenshots\5ca9eb4e-7977-11ef-909b-8cc681825e50_page_1_compare_concat.png" target="_blank"&gt;&lt;img src="screenshots\5ca9eb4e-7977-11ef-909b-8cc681825e50_page_1_compare_concat.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:15:03.674" level="INFO" html="true">_page_1_rectangles_concat:&lt;br&gt;&lt;a href="screenshots\5cbf3d3d-7977-11ef-9bba-8cc681825e50_page_1_rectangles_concat.png" target="_blank"&gt;&lt;img src="screenshots\5cbf3d3d-7977-11ef-9bba-8cc681825e50_page_1_rectangles_concat.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:15:03.674" level="INFO" html="true">_page_1_blended:&lt;br&gt;&lt;a href="screenshots\5cc6d5a5-7977-11ef-b283-8cc681825e50_page_1_blended.png" target="_blank"&gt;&lt;img src="screenshots\5cc6d5a5-7977-11ef-b283-8cc681825e50_page_1_blended.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:15:03.674" level="INFO" html="true">_page_1_diff:&lt;br&gt;&lt;a href="screenshots\5ccb3893-7977-11ef-98ae-8cc681825e50_page_1_diff.png" target="_blank"&gt;&lt;img src="screenshots\5ccb3893-7977-11ef-98ae-8cc681825e50_page_1_diff.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240923 12:15:03.674" level="FAIL">The compared images are different.</msg>
+<status status="FAIL" starttime="20240923 12:15:03.432" endtime="20240923 12:15:03.676"/>
+</kw>
+<status status="FAIL" starttime="20240923 12:15:03.432" endtime="20240923 12:15:03.676">The compared images are different.</status>
+</test>
+<test id="s1-t8" name="Compare two Farm images with date pattern" line="42">
+<status status="FAIL" starttime="20240923 12:15:03.677" endtime="20240923 12:15:03.678">Test cannot be empty.</status>
+</test>
+<status status="FAIL" starttime="20240923 12:14:39.652" endtime="20240923 12:15:03.679"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="7" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="7" skip="0" id="s1" name="Testcase VisualUI">Testcase VisualUI</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

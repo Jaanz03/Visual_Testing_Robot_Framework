@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.2 on win32)" generated="20240906 00:41:12.390" rpa="false" schemaversion="4">
+<suite id="s1" name="Testcase VisualUI" source="C:\Users\vjansi\PycharmProjects\VisualUITestin_POC\TestCases\Testcase_VisualUI.robot">
+<test id="s1-t1" name="Compare Two Different Images" line="7">
+<kw name="Run Keyword And Expect Error" library="BuiltIn">
+<arg>The compared images are different.</arg>
+<arg>Compare Images</arg>
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/reference.png</arg>
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/WagonRCar.png</arg>
+<doc>Runs the keyword and checks that the expected error occurred.</doc>
+<kw name="Compare Images" library="DocTest.VisualTest">
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/reference.png</arg>
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/WagonRCar.png</arg>
+<doc>Compares the documents/images ``reference_image`` and ``test_image``.</doc>
+<msg timestamp="20240906 00:41:13.486" level="INFO">Compare Image Object created in 0.0083 seconds
+Compare Image Object created in 0.0093 seconds</msg>
+<msg timestamp="20240906 00:41:13.486" level="INFO" html="true">_reference_page_1:&lt;br&gt;&lt;a href="screenshots\9e359572-6bba-11ef-af5c-002b67b7a800_reference_page_1.png" target="_blank"&gt;&lt;img src="screenshots\9e359572-6bba-11ef-af5c-002b67b7a800_reference_page_1.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240906 00:41:13.486" level="INFO" html="true">_candidate_page_1:&lt;br&gt;&lt;a href="screenshots\9e3a63e0-6bba-11ef-a7da-002b67b7a800_candidate_page_1.png" target="_blank"&gt;&lt;img src="screenshots\9e3a63e0-6bba-11ef-a7da-002b67b7a800_candidate_page_1.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240906 00:41:13.486" level="FAIL">The compared images have different dimensions:
+reference:(568, 751, 3)
+candidate:(616, 753, 3)</msg>
+<status status="FAIL" starttime="20240906 00:41:13.397" endtime="20240906 00:41:13.488"/>
+</kw>
+<msg timestamp="20240906 00:41:13.488" level="FAIL">Expected error 'The compared images are different.' but got 'The compared images have different dimensions:
+reference:(568, 751, 3)
+candidate:(616, 753, 3)'.</msg>
+<status status="FAIL" starttime="20240906 00:41:13.397" endtime="20240906 00:41:13.488"/>
+</kw>
+<status status="FAIL" starttime="20240906 00:41:13.397" endtime="20240906 00:41:13.489">Expected error 'The compared images are different.' but got 'The compared images have different dimensions:
+reference:(568, 751, 3)
+candidate:(616, 753, 3)'.</status>
+</test>
+<test id="s1-t2" name="Compare Two Same Images" line="10">
+<kw name="Compare Images" library="DocTest.VisualTest">
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/reference.png</arg>
+<arg>C:/Users/vjansi/PycharmProjects/VisualUITestin_POC/Images/expressoCar.png</arg>
+<doc>Compares the documents/images ``reference_image`` and ``test_image``.</doc>
+<msg timestamp="20240906 00:41:13.575" level="INFO">Compare Image Object created in 0.0079 seconds
+Compare Image Object created in 0.0083 seconds</msg>
+<msg timestamp="20240906 00:41:13.575" level="INFO" html="true">_page_1_compare_concat:&lt;br&gt;&lt;a href="screenshots\9e44329b-6bba-11ef-ae02-002b67b7a800_page_1_compare_concat.png" target="_blank"&gt;&lt;img src="screenshots\9e44329b-6bba-11ef-ae02-002b67b7a800_page_1_compare_concat.png" style="width:50%; height: auto;"&gt;&lt;/a&gt;
+The compared images are equal
+Visual Image comparison performed in 0.0676 seconds</msg>
+<status status="PASS" starttime="20240906 00:41:13.490" endtime="20240906 00:41:13.575"/>
+</kw>
+<status status="PASS" starttime="20240906 00:41:13.490" endtime="20240906 00:41:13.576"/>
+</test>
+<status status="FAIL" starttime="20240906 00:41:12.392" endtime="20240906 00:41:13.577"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Testcase VisualUI">Testcase VisualUI</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240906 00:41:13.394" level="WARN">Imported resource file 'C:\Users\vjansi\PycharmProjects\VisualUITestin_POC\Keywords\keywordsVisualUI.robot' is empty.</msg>
+<msg timestamp="20240906 00:41:13.395" level="ERROR">Error in file 'C:\Users\vjansi\PycharmProjects\VisualUITestin_POC\TestCases\Testcase_VisualUI.robot' on line 4: Resource file 'C:\Users\vjansi\PycharmProjects\VisualUITestin_POC\Images' does not exist.</msg>
+</errors>
+</robot>
